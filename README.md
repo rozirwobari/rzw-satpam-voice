@@ -13,12 +13,12 @@ Bot Discord berbasis Node.js yang memiliki fitur:
 
 # Features
 
-✅ Slash Command
-✅ Voice Channel Join
-✅ Voice Activity Tracking
-✅ Playtime Leaderboard
-✅ Ephemeral Message
-✅ Railway Ready
+✅ Slash Command<br>
+✅ Voice Channel Join<br>
+✅ Voice Activity Tracking<br>
+✅ Playtime Leaderboard<br>
+✅ Ephemeral Message<br>
+✅ Railway Ready<br>
 ✅ Discord.js v14
 
 ---
