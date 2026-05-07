@@ -1,4 +1,4 @@
-# RZW Discord Voice Bot
+# RZW Discord Voice BOT
 
 Bot Discord berbasis Node.js yang memiliki fitur:
 
@@ -159,5 +159,5 @@ README.md
 - Playtime hanya tersimpan di RAM
 - Data akan reset jika:
   - Bot Restart
-  - Railway Redeploy
+  - Server Shutdown/Restart
   - Bot Leave Voice Channel
