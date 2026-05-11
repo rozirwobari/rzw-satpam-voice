@@ -64,6 +64,12 @@ client.on('interactionCreate', async (interaction) => {
                 ephemeral: true
             });
         }
+        if (activeVoiceChannel) {
+            return interaction.reply({
+                content: `## BOT Sudah Join Voice <#${activeVoiceChannel.id}>`,
+                ephemeral: true
+            });
+        }
         joinVoiceChannel({
             channelId: voiceChannel.id,
             guildId: voiceChannel.guild.id,
