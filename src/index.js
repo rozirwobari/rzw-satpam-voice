@@ -137,14 +137,12 @@ client.on('interactionCreate', async (interaction) => {
 client.on('voiceStateUpdate', (oldState, newState) => {
     if (!activeVoiceChannel) return;
     const trackedChannelId = activeVoiceChannel.id;
-    if (
-        newState.channelId === trackedChannelId &&
-        oldState.channelId !== trackedChannelId
-    ) {
+    if (newState.channelId === trackedChannelId && oldState.channelId !== trackedChannelId) {
         if (newState.member.user.bot) return;
+        const existing = playTime.get(newState.member.id);
         playTime.set(newState.member.id, {
             joinedAt: Date.now(),
-            totalTime: 0
+            totalTime: existing ? existing.totalTime : 0
         });
     }
     if (oldState.channelId === trackedChannelId && newState.channelId !== trackedChannelId) {
